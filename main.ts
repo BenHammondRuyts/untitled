@@ -170,6 +170,7 @@ mySprite = sprites.create(img`
     . . 4 4 5 5 5 5 5 5 5 5 5 . . . 
     . . . . 4 4 4 4 4 4 4 . . . . . 
     `, SpriteKind.Player)
+scene.cameraFollowSprite(mySprite)
 controller.moveSprite(mySprite)
 let enemy1 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
@@ -212,7 +213,7 @@ enemy1,
 500,
 true
 )
-enemy1.follow(mySprite, 50)
+enemy1.follow(mySprite, 100)
 let small_dot = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
